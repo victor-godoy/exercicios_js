@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex 16</title>
+</head>
+
+<body>
+  <h1>Ex 16</h1>
+
+  <script>
+    // calcular os anos bissextos comecando de 1004
+
+    ano = 1004
+    while (ano <= 2023) {
+
+      // pensar assim : se o ano nao for multiplo de 100( é bissexto) ou se for multiplo de 400 = é bissexto
+
+      if (!(ano % 100 === 0) || (ano % 400 === 0)) {
+        // não múltiplos de 100 (1900 não é bissexto) e múltiplos de 400 (2000 é bissexto).
+
+        // ==================
+
+        // ou seja ( ! = not transforma a consicao ao contrario)
+
+        // (ano % 100 === 0) se essa condicao for Verdadeira eu quero que faca algo 
+        // ou seja seo ano dividido por 100 resultar em 0 eu sei que é multiplo entao ( o ano nao é bissexto )
+
+        // !(ano % 100 === 0) se essa condicao nao for verdadeira quero que faca algo 
+        // ou seja se ano dividido por 100 nao resultar em 0 eu sei que é ( ano bissexto )
+
+        // ==============
+
+
+        // segunda condicao estou usando o ( OR - OU )
+
+        // se o ano for dividido por 400 e o resto da divisao for = 0 ( o ano é bissexto  )
+
+
+        // ================
+
+        // se caso a primeira condicao (der o resto 0 = falso ) ai vem a segunda condicao mesmo a primeira dando falso se a segunda der Verdadeiro ( ano é bissexto   )
+
+
+        document.write(ano + " <br> ")
+      } else {
+        document.write(ano + " nao é bissexto <br>")
+      }
+
+      ano += 4
+
+
+    }
+
+
+
+
+  </script>
+
+</body>
+
+</html>

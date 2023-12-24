@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FizzBuzz</title>
+</head>
+
+<body>
+  <h1>FizzBuzz</h1>
+
+
+  <script>
+    // ex fizzbuzz
+
+    // se divisivel por 3 = Fizz (feito)
+    // se divisivel por 5 = Buzz (feito)
+    // se divisivel por 3 e 5 = FizzBuzz
+    // nao divisivel por 3 e 5 = "numero digitado"  
+    // n é um numero = " n é um numero   " (feito)
+
+    function fizzBuzz(entrada) {
+
+      if (typeof entrada !== 'number') {
+        return 'Não é um número';
+      }
+      if (entrada % 3 === 0 && entrada % 5 === 0) {
+        return 'FizzBuzz';
+      }
+      if (entrada % 3 === 0) {
+        return 'Fizz';
+      }
+      if (entrada % 5 === 0) {
+        return 'Buzz';
+      }
+      return entrada;
+
+
+
+    }
+    console.log(fizzBuzz(11))
+
+// Se colocar o ( divisivel por 3 e 5 = FizzBuzz ) por ultimo o resultado que aparecera sera fizz isso pq o ( (entrada % 3 === 0) já resulta da divisao ) para arrumar isso só mudar a ordem(posicionamento)
+
+  </script>
+
+</body>
+
+</html>

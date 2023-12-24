@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex 6</title>
+
+  <style>
+    body {
+      background: #08702933;
+    }
+
+    header {
+      background: #03d045;
+      padding: 30px;
+
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .form {
+      width: 500px;
+      margin: 60px auto;
+
+      color: white;
+      background: #0a4d1f;
+      padding: 30px;
+      border-radius: 30px;
+
+      text-align: center;
+
+
+    }
+
+    .form button {
+      display: block;
+      margin: 10px auto;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <p>leia 2 numeros efetua as 4 operacoes matematicas e mostre os resultados.</p>
+  </header>
+
+  <div class="form">
+
+    <p>Digite o primeiro número </p>
+    <input type="number" id="num1">
+
+    <p>Digite o segundo número</p>
+    <input type="number" id="num2">
+
+    <br><br><br>
+
+    <label for="">Soma</label>
+    <input type="radio" name="operacao" id="soma" value="soma">
+    <br><br><br>
+
+    <label for="">Subtracao</label>
+    <input type="radio" name="operacao" id="subtracao" value="subtracao">
+    <br><br><br>
+
+    <label for="">Multiplicacao</label>
+    <input type="radio" name="operacao" id="multiplicacao" value="multiplicacao">
+    <br><br><br>
+
+    <label for="">Divisao</label>
+    <input type="radio" name="operacao" id="divisao" value="divisao">
+    <br><br><br>
+
+
+
+    <button onclick="operacoes()">Enviar</button>
+  </div>
+
+
+  <script src="./ex6.js"></script>
+</body>
+
+</html>

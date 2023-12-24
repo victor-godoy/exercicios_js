@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ex 17</title>
+</head>
+
+<body>
+
+
+  <h1>Ex 17</h1>
+
+  <button onclick="numeroNovo()">Outro número</button>
+  <button onclick="limpar()">Limpar</button>
+
+  <div class="tabuada"></div>
+
+
+  <!-- funcoes void = quando reaproveitamos o codigo -->
+
+  <script>
+    // Pedir para o usuario digitar um numero e mostre a tabuada desse numero de 1 a 1000. Deve ter a possibilidade do usuario digitar outro numero e tambem de limpar a tabuada 
+
+
+    const tabuada = document.querySelector('.tabuada');
+    console.log(tabuada)
+
+    function numeroNovo() {
+
+      mensagem = '' // deixo vazio e dentro do meu loop euu concateno o valor 
+      x = parseInt(prompt("Digite um numero"))
+      n = 1
+
+
+      while (n <= 1000) {
+        mensagem += n + " x " + x + " = " + (n * x) + "<br>";
+
+
+        if (n % 10 === 0 && n > 0) {
+          mensagem += (" <hr> ")
+
+        }
+        n++;
+
+      }
+      tabuada.innerHTML = mensagem
+
+    }
+
+    //  limpar
+    function limpar() {
+      mensagem = ''
+      tabuada.innerHTML = mensagem
+
+
+
+    }
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex 13</title>
+  </head>
+
+  <body>
+    <script>
+      // pedir para o usuario digitar dois numeros e mostrar uma mensagem informando se foi aprovado ou nao. ( a nota de corte é 5  ) mass se alguma nota for = 0 ( reprovado direto  )
+
+      nota1 = parseFloat(prompt("Digite sua primeira nota"));
+      nota2 = parseFloat(prompt("Digite sua segunda nota"));
+
+      media = (nota1 + nota2) / 2;
+
+      if (media >= 5) {
+        alert("Aprovado ");
+      } else {
+        if (nota1 === 0 || nota2 === 0) {
+          alert("Reprovado, pois em uma das suas notas tirou 0");
+        }
+        alert("Aprovado");
+      }
+    </script>
+  </body>
+</html>

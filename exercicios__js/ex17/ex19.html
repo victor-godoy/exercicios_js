@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex 19</title>
+</head>
+
+<body>
+
+  <p>Calcule a area do retangulo </p>
+  <button onclick="areaRetangulo()">Calcule</button>
+  <button onclick="alertBtn()">Alert btn</button>
+  <h3 class="resultado"></h3>
+
+  <script>
+    // usuario digita dois numeros que representam os lados de um retangulo. quando clicar no botao mostra a area do retangulo 
+
+    const resultado = document.querySelector(".resultado")
+
+    n1 = parseInt(prompt("Digite um número"))
+    n2 = parseInt(prompt("Digite outro número"))
+    area = ((n1 * n2) / 2)
+
+    function alertBtn() {
+      alert("A area do retangulo que tem " + n1 + " de um lado e do outro " + n2 + " é: " + area)
+    }
+
+    function areaRetangulo() {
+      resultado.innerHTML = area
+
+    }
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+
+</html>

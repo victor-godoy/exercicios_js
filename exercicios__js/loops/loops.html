@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loops</title>
+  </head>
+
+  <body>
+    <h1>Loops</h1>
+
+    <script>
+      // for ( for )
+      for (i = 0; i <= 5; i++) {
+        console.log("Testando o loop for", i);
+      }
+
+      // while ( enquanto )
+      a = 0;
+      while (a <= 2) {
+        console.log("Testando o loop while", a);
+        a++;
+      }
+
+      // do...while (faça_enquanto )
+      let result = "";
+      let i = 0;
+
+      do {
+        i++;
+        result = result + i;
+      } while (i < 5);
+
+      console.log(result);
+
+      // a diferenca entre o ( while ) para o ( do...while ) é que
+      // no ( while ) ele executa primeiro pra depois verificar
+      // no ( do...while ) ele verifica primeiro pra depois executar
+    </script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex 10</title>
+  </head>
+
+  <body>
+    <script>
+      // pedir para o usúario digitar as notas da prova, soma e mostre a média
+
+      let continuar = true;
+      let nota = [];
+      let i = 1;
+
+      while (continuar) {
+        let notaAluno = parseInt(prompt("Digite sua nota : " + i));
+        nota.push(notaAluno);
+        i++;
+
+        continuar = confirm("Deseja continuar ? ");
+      }
+
+      // somando os itens dentro da minha array
+      let somaValoresArray = nota.reduce(
+        (acumulador, notaSeguinte) => acumulador + notaSeguinte,
+        0
+      ); // atribui o meu acumulador como 0 e pego o item da minha array
+
+      let media = parseFloat(somaValoresArray / nota.length);
+      alert("A média das suas notas é de : " + media.toFixed(2));
+    </script>
+  </body>
+</html>

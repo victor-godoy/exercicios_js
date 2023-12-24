@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex 12</title>
+  </head>
+
+  <body>
+    <script>
+      // fazer jogador1 digitar um numero
+      numJoga1 = parseInt(prompt("Jogador 1 digite seu número"));
+
+      // fazer jogador2 digitar um numero
+      numJoga2 = parseInt(prompt("Jogador 2 digite seu número"));
+
+      // se forem iguais , mostrar " empate"
+
+      if (numJoga1 === numJoga2) {
+        alert("Empate");
+      } else {
+        // sortear um numero de 0 a 1
+        sortear = parseInt(Math.random() * 2);
+        // se o numero sorteado for 0, ganha quem escolher o numero  menor
+
+        if (sortear === 0) {
+          if (numJoga1 < numJoga2) {
+            alert("Ganhou o jogador 1");
+          } else {
+            alert("Ganhou o jogador 2");
+          }
+        } else {
+          if (numJoga1 > numJoga2) {
+            alert("Ganhou o jogador 1");
+          } else {
+            alert("Ganhou o jogador 2");
+          }
+          // e o numero sorteado for 1 , ganha quem escolher o maior numero
+        }
+      }
+    </script>
+  </body>
+</html>

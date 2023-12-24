@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ex 18</title>
+</head>
+
+<body>
+  <h1>Ex 18</h1>
+
+  <h2>Lógica de programação</h2>
+
+  <button onclick="adicao()">+</button>
+  <button onclick="subtracao()">-</button>
+  <button onclick="multiplicacao()">*</button>
+  <button onclick="divisao()">/</button>
+
+  <h3 class="resultado"></h3>
+
+  <script>
+    // quero que o usuario digite um valor e esse valor apareca com 4 opcoes de btn de contas ( + , - , / , *) 
+    // quando clicar em um btn vai aparecer para o usuario digitar outro btn e depois o resultado da conta 
+
+    const resultado = document.querySelector(".resultado");
+
+
+    n1 = parseInt(prompt("Digite 1 número"))
+    resultado.innerHTML = n1
+
+
+    function adicao() {
+      n2 = parseInt(prompt("Digite 2 número"))
+
+      resultado.innerHTML = n1 + " + " + n2 + " = " + (n1 + n2);
+
+    }
+
+
+    function subtracao() {
+      n2 = parseInt(prompt("Digite 2 número"))
+
+      resultado.innerHTML = n1 + " - " + n2 + " = " + (n1 - n2);
+    }
+
+
+    function multiplicacao() {
+      n2 = parseInt(prompt("Digite 2 número"))
+
+      resultado.innerHTML = n1 + " * " + n2 + " = " + (n1 * n2);
+    }
+
+    function divisao() {
+      n2 = parseInt(prompt("Digite 2 número"))
+
+      resultado.innerHTML = n1 + " / " + n2 + " = " + (n1 / n2);
+    }
+
+
+
+
+  </script>
+</body>
+
+</html>
